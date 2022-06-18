@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Math Zhou">
+    
+    <title>
+        
+            泛函分析测试 |
+        
+        小周的数学世界
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/zhou.png">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/zhou.png","favicon":"/images/zhou.png","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"小周的数学世界"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":false,"style":"default"},"pjax":{"enable":false},"lazyload":{"enable":false},"version":"3.4.5"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                小周的数学世界
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">泛函分析测试</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/zhou.png">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">Math Zhou</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;
+        <span class="pc">2022-06-18 13:39:51</span>
+        <span class="mobile">2022-06-18 13:39</span>
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">泛函分析</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>980 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>3 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="巴拿赫空间上的有界线性算子"><a href="#巴拿赫空间上的有界线性算子" class="headerlink" title="巴拿赫空间上的有界线性算子"></a>巴拿赫空间上的有界线性算子</h1><p>前面两章的内容可以看作是学习泛函分析的准备工作，让我们熟悉了泛函分析研究的主要对象之一：无限维空间。从本章开始，我们将研究算子理论，而在泛函分析基础中，我们主要研究有界线性泛函，当然我们也会对无界线性泛函做简单的介绍，那么现在就让我们开始新的旅程吧！</p>
+<h2 id="有界线性算子"><a href="#有界线性算子" class="headerlink" title="有界线性算子"></a>有界线性算子</h2><h3 id="定义1："><a href="#定义1：" class="headerlink" title="定义1："></a>定义1：</h3><p>设 $E$ 及 $E_{1}$ 都是实(或复)的线性空间, $T$ 是由 $E$ 的 某个子空间 $D$ 到线性空间 $E_{1}$ 中的映射,如果对任意的 $x, y \in$ $D$, 有:</p>
+<script type="math/tex; mode=display">
+\begin{align*}
+    T(x+y)=Tx+Ty,\forall x,y\in D\\
+    T(\alpha x)=\alpha x,\forall \alpha\in\mathbb{K}
+\end{align*}</script><p>我们称这样的映射为线性映射或线性算子.</p>
+<hr>
+<p>给出一些我们常用的记号：映射$T$的定义域常用$D_T$表示；值域通常用$T(D)$表示.</p>
+<p>当映射的值域在实数域或者复数域时，我们习惯称其为线性泛函，$T$常用$f,g$表示.</p>
+<p>如果$T$是连续(按照空间的范数收敛)则称$T$是连续线性算子；若$T$将任何有界集映射为有界集我们称其为有界线性算子.在本小节中我们主要探索连续和有界的关系！</p>
+<p>首先，我们做一点说明，我们主要还是在无限维空间中研究.这是为什么呢？因为在有限维空间中：</p>
+<script type="math/tex; mode=display">
+\text{线性}\Rightarrow \text{连续} \iff \text{有界}</script><p>这样的映射我们实在没有兴趣研究(<strong>真的没有兴趣吗？哈哈!</strong>)</p>
+<p>比如：在$C[a,b]$中定义积分算子：</p>
+<script type="math/tex; mode=display">
+f(x)=\int_{a}^{b}x(t)\mathrm{d}t</script><p>这显然是一个线性泛函；并且还是连续有界的.</p>
+<p>现在我们对有界、连续、线性这几个关系进行探索！</p>
+<h3 id="定理1："><a href="#定理1：" class="headerlink" title="定理1："></a>定理1：</h3><p>设 $E, E_{1}$ 都是实赋范线性空间, $T$ 是由 $E$ 的子空间 $D$ 到 $E_{1}$ 中的连续可加算子.则 $T$ 满足齐次性,因此 $T$ 是连续线性算子.</p>
+<hr>
+<p>证明：因为对任意的$a_1,a_2$都有：</p>
+<script type="math/tex; mode=display">
+T(a_1+a_2)=Ta_1+Ta_2</script><p>又因为$T$是连续的，因此我们由柯西引理知道$T$是齐次的，即：</p>
+<script type="math/tex; mode=display">
+T(\alpha x)=\alpha Tx</script><p>推论：设 $E, E_{1}$ 都是复赋范线性空间, $T$ 是由 $E$ 的子空间 $D$ 到 $E_{1}$ 中的连续可加算子,且 $T(\mathrm{i} x)=\mathrm{i} T x$, 则 $T$ 满足齐次性,因此 $T$ 是连续线性算子.</p>
+<hr>
+<p>下边一个定理是我们对有界映射常用的一种说法：</p>
+<h3 id="定理2："><a href="#定理2：" class="headerlink" title="定理2："></a>定理2：</h3><p>设 $E, E_{1}$ 都是赋范线性空间, $T$ 是由 $E$ 的子空间 $D$ 到 $E_{1}$ 中的线性算子. 则 $T$ 有界的充分必要条件是存在 $M&gt;0$, 使得 对一切 $x \in D$, 有 $|T x| \leqslant M|x|$.</p>
+<hr>
+<p>证明：</p>
+<p>充分性：显然.</p>
+<p>必要性：考虑单位球面(再一次体现了单位球面的重要性)，$S\cap D:||x||=1$,那么对任意的$x\in S$<br>都有：</p>
+<script type="math/tex; mode=display">
+||T(x)||\le M</script><p>先考虑任意的$y\ne 0\in D$,那么$\dfrac{y}{||y||}\in S\cap D$,所以：</p>
+<script type="math/tex; mode=display">
+T(\dfrac{y}{||y||})\le M</script><p>因此：</p>
+<script type="math/tex; mode=display">
+T(y)\le M||y||</script><p>命题得证.</p>
+<hr>
+<p>有了这个等价刻画之后，我们就可以证明在赋范线性空间中连续和有界是一回事：</p>
+<h3 id="定理3："><a href="#定理3：" class="headerlink" title="定理3："></a>定理3：</h3><p> 设 $E, E_{1}$ 都是赋范线性空间, $T$ 是由 $E$ 的子空间 $D$ 到 $E_{1}$ 中的线性算子. 则下列性质等价：</p>
+<p>(i) $T$ 连续;</p>
+<p>(ii) $T$ 在原点 $\theta$ 处连续;</p>
+<p>(iii) $T$ 有界.</p>
+<hr>
+<p>证明：</p>
+<p>$(i)\Rightarrow (ii):$显然.</p>
+<p>$(ii)\Rightarrow (iii):$注意到线性性并叙述连续定义：对任意的$\varepsilon&gt;0$(不妨取为1),存在$\delta&gt;0$，使得对任意的$||x-0||\le\delta$,都有：</p>
+<script type="math/tex; mode=display">||Tx-T(0)||<1</script><p>因此对任意的$x\ne 0$,都有：</p>
+<script type="math/tex; mode=display">
+||\dfrac{\delta x}{||x||}||\le \delta</script><p>因此：</p>
+<script type="math/tex; mode=display">
+||T(\dfrac{\delta x}{||x||})||<1</script><p>所以：</p>
+<script type="math/tex; mode=display">
+||Tx||\le \frac{1}{\delta}||x||</script><p>所以$T$有界.</p>
+<p>$(iii)\Rightarrow(i)$:</p>
+<p>设$\{x_n\}\subset D$且$x_n\to x$,那么：</p>
+<script type="math/tex; mode=display">
+||Tx_n-Tx||=||T(x_n-x)||\le M||x_n-x||</script><p>因此$T$在$x$处连续.故得证.</p>
+<h2 id="线性算子空间"><a href="#线性算子空间" class="headerlink" title="线性算子空间"></a>线性算子空间</h2><p>从这里开始，我们应$B$空间表示Banach空间.不做说明时，所说的算子都定义在整个空间上.</p>
+<p>设$E,E_1$都是$B$空间，我们考虑所有从$E\to E_1$的有界线性泛函，不难发现，如果$f,g$是线性算子，那么$f+g$也是线性算子，$kf$也是线性算子，这说明线性算子在逐点定义的加法和自然数乘下可以形成数域$\mathbb{K}$上的线性空间.我们将这个空间记为：$\mathscr{B}(E,E_1)$，当$E_1=E$时，我们简记为：$\mathscr{B}(E)$</p>
+<p>他已经是一个线性空间了，我们要在其上赋予范数使其具有拓扑结构，可是应该怎么赋予范数呢？这是一个好问题！一方面可以根据有限维空间定义范数的延申，一方面是根据书上的，因为$f$是有界线性泛函，所以定义:</p>
+<script type="math/tex; mode=display">
+||f||_{\mathscr{B}(E,E_1)}=\sup_{x\in E}\{\frac{||Tx||}{||x||}\}</script><p>显然它可以等价定义维：</p>
+<script type="math/tex; mode=display">
+\|T\|=\sup _{\|x\| \leqslant 1 \atop x \in E}\|T x\|=\sup _{\|x\|=1\atop x \in E}\|T x\|</script><p><strong>有限维泛函空间中：如$R^n$中也是如此定义的.</strong></p>
+<p>因为是有界泛函，所以：</p>
+<script type="math/tex; mode=display">
+||Tx||\le M||x||</script><p>因此这个定义是合理的，如果是无界泛函那么上确界可能不存在，因此定义就不合理了。</p>
+<p>下边我们要验证这确实是一个范数：<strong>首先正定性和齐次性是很自然满足的，我们只验证三角不等式！</strong></p>
+<p>考虑$T,S$,那么：</p>
+<script type="math/tex; mode=display">
+||T+S||=\sup _{\|x\| \leqslant 1 \atop x \in E}||(T+S)x||\le \sup _{\|x\| \leqslant 1 \atop x \in E}||Tx||+\sup _{\|x\| \leqslant 1 \atop x \in E}||Sx||</script><p>因此三角不等式也成立，所以这确实是一个范数.</p>
+<p>虽然算子的范数是有界线性算子的一个特性，但是我们不期待能够以来它刻画有界线性算子，这是因为其范数实在太难算了！(<strong>我是有一说一，它是真的难算，不说别的，就算是有限维空间这个也是非常难算的，甚至在某些情况下，无界情形要比有界好算的多，如果不相信你就回顾下数分中的矩阵范数吧，这时有限维的，试一试好不好算！</strong>)</p>
+<p>我们下列展示一下几个无穷维空间的线性算子的计算：(<strong>留在这里，下次补充！</strong>)</p>
+<p>下边我们继续考虑，这个空间上的拓扑结构:</p>
+<h3 id="定理4："><a href="#定理4：" class="headerlink" title="定理4："></a>定理4：</h3><p>设 $T_{n}(n=1,2,3, \cdots), T$ 都属于 $\mathscr{B}\left(E, E_{1}\right)$, 则 $\left\{T_{n}\right\}$ 按一致算子拓扑收敛于 $T$ 的充分必要条件是 $\left\{T_{n}\right\}$ 在 $E$ 中的任一 有界集上一致收敛于 $T$.</p>
+<p><strong>下边我们将回解释为什么他叫一致算子拓扑收敛：</strong></p>
+<hr>
+<p> 必要性  ：</p>
+<p> 设 $\lim\limits _{n \rightarrow \infty}\left|T_{n}-T\right|=0, A \subset E$ 为有界集. 对于 $A$, 存在正数 $K$, 使得当 $x \in A$ 时, $|x| \leqslant K$, 故</p>
+<script type="math/tex; mode=display">
+\left\|T_{n} x-T x\right\| \leqslant\left\|T_{n}-T\right\|\|x\| \leqslant K\left\|T_{n}-T\right\|</script><p>任给 $\varepsilon&gt;0$, 存在 $N&gt;0$, 使得当 $n&gt;N$ 时, $\left|T_{n}-T\right|&lt;\frac{\varepsilon}{K}$. 由上述可 知, 不等式</p>
+<script type="math/tex; mode=display">
+\left\|T_{n} x-T x\right\|<\varepsilon \quad(n>N)</script><p>对于所有的 $x \in A$ 一致地成立, 故 $\left\{T_{n}\right\}$ 在 $A$ 上一致收敛于 $T$.</p>
+<p>充分性 ：</p>
+<p>设 $\left\{T_{n}\right\} \subset \mathscr{B}\left(E, E_{1}\right)$ 在 $E$ 中的任一有界集上一致收敛于 $T \in \mathscr{B}\left(E, E_{1}\right) .$ 取 $E$ 中的单位球面 $S=\{x:|x|=1, x \in$ $E\} .$ 根据假定,对任给的 $\varepsilon&gt;0$, 存在 $N&gt;0$, 使得当 $n&gt;N$ 时, 不等式</p>
+<script type="math/tex; mode=display">
+\left\|T_{n} x-T x\right\|<\varepsilon</script><p>对于所有的 $x \in S$ 一致地成立,于是</p>
+<script type="math/tex; mode=display">
+\left\|T_{n}-T\right\|=\sup _{\|x\|=1}\left\|T_{n} x-T x\right\| \leqslant \varepsilon \quad(n>N)</script><p>故 $\left\{T_{n}\right\}$ 按一致算子拓扑收敛于 $T$. 证毕.</p>
+<p>然而正如我们在数学分析中学到的，一致收敛的性质实在太好了，大多时候我们很难做到这一点；比如在实分析中我们只要有逐点收敛就会有很好的性质，下边我们看一个例子：</p>
+<p><strong>不一致收敛的例子：</strong></p>
+<p>在 $l^{p}$ 中定义算子 $T_{n}$ 如下：</p>
+<script type="math/tex; mode=display">
+T_{n} x=x_{n} \quad(n=1,2,3, \cdots) \text {, }</script><p>其中 $x=\left\{\xi_{1}, \xi_{2}, \cdots, \xi_{n}, \cdots\right\} \in l^{p}$ 而 $x_{n}=\left\{\xi_{n}, \xi_{n+1}, \cdots\right\} .$ 不难看出 $T_{n}$ 是有界线性算子且 $\left|T_{n}\right| \leqslant 1$. 注意到对每个 $x \in l^{p}$, 有 $\left|x_{n}\right| \rightarrow 0$<br>$(n \rightarrow \infty)$, 故</p>
+<script type="math/tex; mode=display">
+\lim _{n \rightarrow \infty} T_{n} x=\theta</script><p>对每个 $n$, 取</p>
+<script type="math/tex; mode=display">
+y_{n}=\{\underbrace{0, \cdots, 0,1,}_{n} 0, \cdots\}</script><p>则 $T_{n} y_{n}=\{1,0, \cdots\}$, 故</p>
+<script type="math/tex; mode=display">
+\left\|T_{n}\right\| \geqslant\left\|T_{n} y_{n}\right\|=1</script><p>于是 $\left|T_{n}\right|=1$. 因此 $\left\{T_{n}\right\}$ 不按一致算子拓扑收敛于零算子.</p>
+<p>为了处理更一般的问题，我们必须引进另一种更弱的拓扑：强收敛或强算子拓扑收敛(<strong>为啥还是要用强这个词？</strong>)</p>
+<h3 id="定义2"><a href="#定义2" class="headerlink" title="定义2"></a>定义2</h3><p>设 $T, T_{n} \in \mathscr{B}\left(E, E_{1}\right) \quad(n=1,2,3, \cdots)$,若对每个 $x \in E$, 有</p>
+<script type="math/tex; mode=display">
+\lim _{n \rightarrow \infty}\left\|T_{n} x-T x\right\|=0</script><p>则称 $\left\{T_{n}\right\}$ 强收敛于 $T$ 或称 $\left\{T_{n}\right\}$ 按强算子拓扑收敛于 $T .$ 今后常用 后一名称,并记为</p>
+<script type="math/tex; mode=display">
+\lim _{n \rightarrow \infty} T_{n}=T\left(\text { 强）或 } T_{n} \stackrel{\text { 强 }}{\longrightarrow} T(n \rightarrow \infty) .\right.</script><hr>
+<p>很容易就可以验证：一致算子拓扑收敛$\Rightarrow$ 强算子拓扑收敛；且这种收敛具有唯一性！(在拓扑中，我们会见到不唯一的例子！)</p>
+<p>最后我们用一个定理来结束本节：</p>
+<h3 id="定理5："><a href="#定理5：" class="headerlink" title="定理5："></a>定理5：</h3><p>设 $E_{1}$ 是巴拿赫空间,则 $\mathscr{B}\left(E, E_{1}\right)$ 也是巴拿赫 空间.</p>
+<p><strong>这里$B(E,E_1)$是我们通常用的拓扑！,$E,E_1$都是范数定义的拓扑！</strong></p>
+<hr>
+<p>设 $\left\{T_{n}\right\}$ 是 $\mathscr{B}\left(E, E_{1}\right)$ 中的一个基本点列,于是对任给的 $\varepsilon$ $&gt;0$, 存在 $N&gt;0$, 使当 $m, n&gt;N$ 时,</p>
+<script type="math/tex; mode=display">
+\left\|T_{n}-T_{m}\right\|<\varepsilon</script><p>任取 $x \in E$, 则有</p>
+<script type="math/tex; mode=display">
+\left\|T_{n} x-T_{m} x\right\| \leqslant\left\|T_{n}-T_{m}\right\|\|x\|</script><script type="math/tex; mode=display">
+<\varepsilon\|x\| \quad(m, n>N),</script><p>故 $\left\{T_{n} x\right\}$ 是 $E_{1}$ 中的基本点列. 依假设, $E_{1}$ 完备, 故 $\left\{T_{n} x\right\}$ 在 $E_{1}$ 中收敛于某一元素,记为 $y$,于是有</p>
+<script type="math/tex; mode=display">
+\lim _{n \rightarrow \infty} T_{n} x=y</script><p>定义算子 $T: T x=y$. 今证明 $T$ 是定义在 $E$ 上而值域包含在 $E_{1}$ 中的 有界线性算子,且是 $\left\{T_{n}\right\}$ 按一致算子拓扑收敛的极限.(<strong>注意到这里的$T$的定义是很自然的，因为你想让$T_n$收敛到$T$,自然会逐点收敛，那么自然有这样的定义！</strong>)</p>
+<p>下边你就验证$T$是个有界线性算子即可！</p>
+<p>线性性由$T_n$的线性性继承而来，显然！</p>
+<p>看有界性,并证 $\left\{T_{n}\right\}$ 按一致算子拓 扑收敛于 $T$. 在不等式 $(11)$ 中,令 $m \rightarrow \infty$, 并应用前面等式 以及等 式 $T x=y$, 有</p>
+<script type="math/tex; mode=display">
+\left\|T_{n} x-T x\right\| \leqslant \varepsilon\|x\| \quad(x \in E, n>N)</script><p>因此 $T_{n}-T \in \mathscr{B}\left(E, E_{1}\right)$, 于是 $T \in \mathscr{B}\left(E, E_{1}\right)$, 且</p>
+<script type="math/tex; mode=display">
+\left\|T_{n}-T\right\| \leqslant \varepsilon \quad(n>N)</script><p>故 $\left\{T_{n}\right\}$ 按一致算子拓扑收敛于 $T$. 由此可知, $\mathscr{B}\left(E, E_{1}\right)$ 中任一基 本点列必有极限, $\mathscr{B}\left(E, E_{1}\right)$ 是巴拿赫空间. 证毕.</p>
+<p><strong>这个定理可以用来保证$B$的对偶空间是Banach空间，这是因为$B$的对偶空间是从$B$到$R$的线性泛函的全体，显然$\mathbb{R}$是完备的Banach空间！</strong></p>
+<p>至于其代数结构，完全没必要介绍，连个皮毛都没有，想要了解的建议看Rudin的泛函分析，讲了很多Banach代数，还有本GTM也是Banach代数的，等我本科学完了再看那本GTM吧…</p>
+
+        </div>
+
+        
+
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E6%B3%9B%E5%87%BD%E5%88%86%E6%9E%90/">#泛函分析</a>&nbsp;
+                    </li>
+                
+            </ul>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2022/06/18/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0%E7%AC%94%E8%AE%B0/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">复变函数笔记</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2022/06/18/2019%E4%B8%AD%E7%A7%91%E9%99%A2%E5%A4%8F%E4%BB%A4%E8%90%A5%E8%AF%95%E9%A2%98/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">2019中科院夏令营试题</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'Ee7lYqRhcjNj7cOPRRIxNIEx-gzGzoHsz',
+                    appKey: 'YwesIzeNQt7NngluKxavyuMT',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: 'Any Question ?',
+                    lang: 'zh-CN'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'Math Zhou';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2020</span>
+              -
+            
+            2022&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Math Zhou</a>
+        </div>
+        
+            <script async  src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.5</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%B4%E6%8B%BF%E8%B5%AB%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E6%9C%89%E7%95%8C%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">巴拿赫空间上的有界线性算子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%89%E7%95%8C%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90"><span class="nav-number">1.1.</span> <span class="nav-text">有界线性算子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%891%EF%BC%9A"><span class="nav-number">1.1.1.</span> <span class="nav-text">定义1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%861%EF%BC%9A"><span class="nav-number">1.1.2.</span> <span class="nav-text">定理1：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%862%EF%BC%9A"><span class="nav-number">1.1.3.</span> <span class="nav-text">定理2：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%863%EF%BC%9A"><span class="nav-number">1.1.4.</span> <span class="nav-text">定理3：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E7%AE%97%E5%AD%90%E7%A9%BA%E9%97%B4"><span class="nav-number">1.2.</span> <span class="nav-text">线性算子空间</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%864%EF%BC%9A"><span class="nav-number">1.2.1.</span> <span class="nav-text">定理4：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E4%B9%892"><span class="nav-number">1.2.2.</span> <span class="nav-text">定义2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9A%E7%90%865%EF%BC%9A"><span class="nav-number">1.2.3.</span> <span class="nav-text">定理5：</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>
