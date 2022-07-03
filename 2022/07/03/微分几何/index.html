@@ -178,8 +178,6 @@
                     <div class="author">
                         <span class="name">Math Zhou</span>
                         
-                            <span class="author-label">Lv1</span>
-                        
                     </div>
                     <div class="meta-info">
                         <div class="article-meta-info">
@@ -263,7 +261,7 @@
 <h2 id="解答"><a href="#解答" class="headerlink" title="解答"></a>解答</h2><ol>
 <li>直接计算可以得到：<script type="math/tex; mode=display">
  r(t)=(-a\sin t,a\cos t,b),|r'(t)|=\sqrt{a^2+b^2},s=\sqrt{a^2+b^2}t</script> 因此：<script type="math/tex; mode=display">
- r(s)=(a\cos \frac{c}{s},a\sin \frac{c}{s},\frac{b}{c}s),c=\sqrt{a^2+b^2}</script> 进一步我们可以计算该曲线的曲率和挠率：<script type="math/tex; mode=display">
+ r(s)=(a\cos \frac{s}{c},a\sin \frac{s}{c},\frac{b}{c}s),c=\sqrt{a^2+b^2}</script> 进一步我们可以计算该曲线的曲率和挠率：<script type="math/tex; mode=display">
  \kappa(s)=\frac{a}{\sqrt{a^2+b^2}},\tau(s)=\frac{b}{\sqrt{a^2+b^2}}</script></li>
 </ol>
 <p>2.直接可以计算出$s$为弧长参数,因此可以直接计算曲率.注意到：</p>
@@ -411,7 +409,10 @@ p'=e_1-(e_1,n_p)n_p\Rightarrow p''(s_0)=w_{12}e_2=\kappa_g e_2</script><p>而$w_
 <script type="math/tex; mode=display">
 \frac{\mathrm{d} e_1}{\mathrm{d} s}=\kappa_g e_2+\kappa_n e_3=\frac{\mathrm{d} T}{\mathrm{d} s}=\kappa  N</script><p>因此我们得到了：</p>
 <script type="math/tex; mode=display">
-\cos \theta=\frac{\kappa_g}{\kappa},\sin \theta =\frac{\kappa_n}{\kappa}</script><h2 id="试题pdf"><a href="#试题pdf" class="headerlink" title="试题pdf"></a>试题pdf</h2><embed src="./Sample.pdf" width="100%" height="750" type="application/pdf">
+\cos \theta=\frac{\kappa_g}{\kappa},\sin \theta =\frac{\kappa_n}{\kappa}</script><blockquote>
+<p>排版时候有笔误，勿喷！！！</p>
+</blockquote>
+<h2 id="试题pdf"><a href="#试题pdf" class="headerlink" title="试题pdf"></a>试题pdf</h2><embed src="./Sample.pdf" width="100%" height="750" type="application/pdf">
 
 <h2 id="解答pdf"><a href="#解答pdf" class="headerlink" title="解答pdf"></a>解答pdf</h2><embed src="./Solution.pdf" width="100%" height="750" type="application/pdf">
         </div>
@@ -738,5 +739,20 @@ p'=e_1-(e_1,n_p)n_p\Rightarrow p''(s_0)=w_{12}e_2=\kappa_g e_2</script><p>而$w_
 
 
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
