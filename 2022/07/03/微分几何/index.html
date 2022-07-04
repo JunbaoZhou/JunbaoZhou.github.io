@@ -214,12 +214,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fas fa-file-word"></i>&nbsp;<span>2.5k 字</span>
+            <i class="fas fa-file-word"></i>&nbsp;<span>2.6k 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fas fa-clock"></i>&nbsp;<span>12 分钟</span>
+            <i class="fas fa-clock"></i>&nbsp;<span>13 分钟</span>
         </span>
     
     
@@ -385,11 +385,15 @@ r_u=a(v)\cos u+b(v)\sin u</script><p>由于$r_{uv}=0$，因此$a(v)=a,b(v)=b$(�
 r=a\sin u-b\cos u+g(v)\Rightarrow a\sin u-b\cos u+cv</script><p>又因为$F=0$,所以$a\perp b\perp c$.<br>取$a=(1,0,0),b=(0,1,0),c=(0,0,1)$,我们得到曲面：</p>
 <script type="math/tex; mode=display">
 r(u,v)=(\sin u,-\cos u,v)</script><p>即圆柱面.</p>
-<p>13.考虑在点$p$其范围法向量为$n_p$.因此在切平面的投影的曲线为：(注意到$n_p$已经固定，但是$e_1$是变动的)</p>
+<p>13.设$r(s)$为曲线，$s$是$r$的弧长，$n_p$是在$p$点的法向量，其中$e_1,e_2,e_3$为Darbox标架，考虑投影曲线为：</p>
 <script type="math/tex; mode=display">
-p(s)=r(s)-(r(s),n_p)n_p</script><p>这里$s$未必是$p$的弧长参数.</p>
+p(s)=r(s)-(r(s),n_p)n_p</script><p>但是$s$未必是$p(s)$的弧长参数，设$p$的弧长参数为$u$因此，作为切平面的曲线其$T(s)$为：</p>
 <script type="math/tex; mode=display">
-p'=e_1-(e_1,n_p)n_p\Rightarrow p''(s_0)=w_{12}e_2=\kappa_g e_2</script><p>而$w_{12}$正是测地曲率.</p>
+T(s)=\frac{p'(s)}{|p'(s)|}</script><p>对其再次求导，注意到是对$u$求导，那么我们有：</p>
+<script type="math/tex; mode=display">
+\frac{d T(s)}{d u}=\frac{d T(s)}{d s}\frac{d s}{d u}=\{\frac{ (e_1-(e_1,n_p)n_p)’}{|e_1-(e_1,n_p)n_p|} +(e_1-(e_1,n_p)n_p) d\frac{1}{|e_1-(e_1,n_p)n_p|} \} \frac{d s}{ du}</script><p>注意到在$s=s_0$处，$\frac{d s}{d u}=1$,因此直接计算出：</p>
+<script type="math/tex; mode=display">
+\frac{d T(s)}{d u}|_ {s=s_0} = \frac{w_{12}}{ds} e_2</script><p>而：$\dfrac{w_{12}}{ds}$正是测地曲率.</p>
 <p>14.我们知道：</p>
 <script type="math/tex; mode=display">
 \frac{\mathrm{d} ^2 r}{\mathrm{d}^2 s}=\kappa_g e_2+\kappa_n e_3=\frac{w_{12}}{\mathrm{d} s}e_2+\frac{w_{13}}{\mathrm{d} s}e_3</script><p>又因为：</p>
@@ -415,6 +419,9 @@ p'=e_1-(e_1,n_p)n_p\Rightarrow p''(s_0)=w_{12}e_2=\kappa_g e_2</script><p>而$w_
 <h2 id="试题pdf"><a href="#试题pdf" class="headerlink" title="试题pdf"></a>试题pdf</h2><embed src="./Sample.pdf" width="100%" height="750" type="application/pdf">
 
 <h2 id="解答pdf"><a href="#解答pdf" class="headerlink" title="解答pdf"></a>解答pdf</h2><embed src="./Solution.pdf" width="100%" height="750" type="application/pdf">
+
+<h2 id="图片实验"><a href="#图片实验" class="headerlink" title="图片实验"></a>图片实验</h2><p><img src="/.com//1.PNG" alt="实验集"></p>
+
         </div>
 
         
@@ -657,7 +664,7 @@ p'=e_1-(e_1,n_p)n_p\Rightarrow p''(s_0)=w_{12}e_2=\kappa_g e_2</script><p>而$w_
         <aside class="page-aside">
             <div class="post-toc-wrap">
     <div class="post-toc">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%A4%8D%E4%B9%A0%E4%B9%A0%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">微分几何复习习题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%9F%E6%9C%AB%E6%A0%B7%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">期末样题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%AD%94"><span class="nav-number">1.2.</span> <span class="nav-text">解答</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%95%E9%A2%98pdf"><span class="nav-number">1.3.</span> <span class="nav-text">试题pdf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%AD%94pdf"><span class="nav-number">1.4.</span> <span class="nav-text">解答pdf</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95%E5%A4%8D%E4%B9%A0%E4%B9%A0%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">微分几何复习习题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%9F%E6%9C%AB%E6%A0%B7%E9%A2%98"><span class="nav-number">1.1.</span> <span class="nav-text">期末样题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%AD%94"><span class="nav-number">1.2.</span> <span class="nav-text">解答</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%95%E9%A2%98pdf"><span class="nav-number">1.3.</span> <span class="nav-text">试题pdf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E7%AD%94pdf"><span class="nav-number">1.4.</span> <span class="nav-text">解答pdf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E5%AE%9E%E9%AA%8C"><span class="nav-number">1.5.</span> <span class="nav-text">图片实验</span></a></li></ol></li></ol>
     </div>
 </div>
         </aside>
