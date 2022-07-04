@@ -59,6 +59,27 @@
   </entry>
   
   <entry>
+    <title>清华大学夏令营试题</title>
+    <link href="http://example.com/2022/06/18/%E6%B8%85%E5%8D%8E/"/>
+    <id>http://example.com/2022/06/18/%E6%B8%85%E5%8D%8E/</id>
+    <published>2022-06-18T05:39:51.000Z</published>
+    <updated>2022-07-03T09:39:56.593Z</updated>
+    
+    <content type="html"><![CDATA[<p>2021清华九推试题<br> <span id="more"></span></p><h2 id="2021清华九推试题"><a href="#2021清华九推试题" class="headerlink" title="2021清华九推试题"></a>2021清华九推试题</h2><ol><li><p>与线性变换有关, 疑似错题.</p></li><li><p>设 $A, B$ 为数域$\mathbb{F}$上 $n$ 阶方阵.求证:</p></li></ol><p>(1) 对 $\forall \lambda \in \mathbb{F}$,均成立 $\lambda I_{n}-A B$ 可逆 $\Leftrightarrow \lambda I_{n}-B A$ 可逆.</p><p>(2)若 $\operatorname{rank}(A B)=\operatorname{rank}(B)$, 则 $\operatorname{rank}\left(A B^{2}\right)=\operatorname{rank}\left(B^{2}\right)$.</p><ol><li><p>设 $V$ 为 $\mathbb{C}$ 上的 $n$ 维线性空间, $\varphi$ 为 $V$ 上的线性变换,其全体不同特征值为 $\lambda_{1}, \lambda_{2}, \cdots, \lambda_{r}$. 求证: $\varphi$ 可 对角化 $\Leftrightarrow$ 存在 $1 \leqslant i \leqslant r$, 使得</p><script type="math/tex; mode=display">\operatorname{Im}\left(\varphi-\lambda_{i} \mathcal{E}\right)=\oplus_{j \neq i} \operatorname{ker}\left(\varphi-\lambda_{j} \mathcal{E}\right) .</script></li><li><p>设 $f \in C[0,1]$. 对任意 $[0,1]$ 上的可微函数 $g$ 均成立 $\int_{0}^{1} f(x) g(x) d x=0$. 求证: $f \equiv 0$.</p></li><li><p>求证Green第二公式.</p></li><li><p>与连续函数介值定理有关.</p></li><li><p>设区域 $D \subset \mathbb{C},\left\{f_{n}\right\} \subset H(\bar{D})$, 存在 $\bar{D}$ 上的复变函数 $f$,使得 $\left\{f_{n}\right\}$ 在 $D$ 上收敛于 $f,\left\{f_{n}\right\}$ 在 $\partial D$ 上一 致收敛于 $f$.求证:</p></li></ol><p>(1) $\left\{f_{n}\right\}$ 在 $D$ 中一致收敛于 $f \in H(D)$.</p><p>(2) 若 $\left\{f_{n}\right\}$ 是 $D$ 中的单叶函数列, $f$ 不是常值函数,则 $f$ 也是 $D$ 中的单叶函数.</p><h2 id="2021清华内推"><a href="#2021清华内推" class="headerlink" title="2021清华内推"></a>2021清华内推</h2><ol><li><p>(10\%) 已知复方阵 $A \in M_{n}(\mathbb{C})$ 的特征多项式为 $(\lambda-1)^{n}$. 证明 $A$ 与 $A^{2}$ 相似.</p></li><li><p>(10\%) 已知实对称方阵</p><script type="math/tex; mode=display">A=\left(\begin{array}{lll}2 & 0 & 1 \\0 & 2 & 1 \\1 & 1 & 1\end{array}\right)</script><p>向量 $x \in\left\{x \in R^{3} \mid x^{T} x=1\right\}$. 当 $x$ 取何值时, $x^{T} A x$ 取到最大值,最小值?</p></li><li><p>(10\%) 已知域 $\mathbb{F}$ 上的有限维线性空间 $X, Y, U, V$, 以及线性映射 $\alpha: X \rightarrow Y, \beta: V \rightarrow U, \psi: X \rightarrow U$,并且满足<br>$\operatorname{ker} \alpha \subseteq \operatorname{ker} \psi, \operatorname{Im} \psi \subseteq \operatorname{Im} \beta$<br>那么是否存在线性映射 $\phi: Y \rightarrow V$ 使得</p><script type="math/tex; mode=display">\psi=\beta \circ \phi \circ \alpha ?</script><p>若是请证明,否则举出一个反例.</p></li><li><p>(10\%) 已知域 $\mathbb{F}$ 上的方阵 $A, B \in M_{n}(\mathbb{F})$,满足: $A$ 是可逆矩阵, $B$ 是幂零矩阵(即存在正整数 $m$ 使得 $B^{m}=0$ ). 证明:对任意 $C \in M_{n}(\mathbb{F})$, 存在 $X \in M_{n}(\mathbb{F})$, 使得</p><script type="math/tex; mode=display">A X-X B=C \text {. }</script></li><li><p>(10\%)设 $E$ 为 $\mathbb{R}$ 的非空子集,并且 $E$ 上的任何连续函数都有界. 证明: $E$ 为有界闭集.</p></li><li><p>(10\%)已知 $f(x)$ 是定义在 $[0,1]$ 上的处处非负的黎曼可积函数, 并且</p><script type="math/tex; mode=display">\int_{0}^{1} f(x) d x=0 .</script><p>证明: $f(x)$ 几乎处处为 0 .</p></li><li><p>(20\%)计算 $\mathbb{R}^{3}$ 中的区域</p><script type="math/tex; mode=display">\left\{(x, y, z) \mid x^{2}+y^{2} \leqslant 1, y^{2}+z^{2} \leqslant 1, z^{2}+x^{2} \leqslant 1\right\}</script><p>的体积.</p></li><li><p>(20\%) 已知 $f(z)$ 在单位圆盘 $|z|&lt;1$ 解析,并且 $|f(z)| \leqslant \frac{1}{1-|z|}, \forall|z|&lt;1$. 证明:对任意整数 $n \geqslant 0$,</p><script type="math/tex; mode=display">\left|f^{(n)}(0)\right| \leqslant(n+1) ! e .</script></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;2021清华九推试题&lt;br&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="夏令营" scheme="http://example.com/categories/%E5%A4%8F%E4%BB%A4%E8%90%A5/"/>
+    
+    
+    <category term="清华" scheme="http://example.com/tags/%E6%B8%85%E5%8D%8E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>数学周刊：第1-3期</title>
     <link href="http://example.com/2022/06/18/%E6%95%B0%E5%AD%A6%E5%91%A8%E5%88%8A/"/>
     <id>http://example.com/2022/06/18/%E6%95%B0%E5%AD%A6%E5%91%A8%E5%88%8A/</id>
@@ -81,27 +102,6 @@
     
     
     <category term="习题" scheme="http://example.com/tags/%E4%B9%A0%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>清华大学夏令营试题</title>
-    <link href="http://example.com/2022/06/18/%E6%B8%85%E5%8D%8E/"/>
-    <id>http://example.com/2022/06/18/%E6%B8%85%E5%8D%8E/</id>
-    <published>2022-06-18T05:39:51.000Z</published>
-    <updated>2022-07-03T09:39:56.593Z</updated>
-    
-    <content type="html"><![CDATA[<p>2021清华九推试题<br> <span id="more"></span></p><h2 id="2021清华九推试题"><a href="#2021清华九推试题" class="headerlink" title="2021清华九推试题"></a>2021清华九推试题</h2><ol><li><p>与线性变换有关, 疑似错题.</p></li><li><p>设 $A, B$ 为数域$\mathbb{F}$上 $n$ 阶方阵.求证:</p></li></ol><p>(1) 对 $\forall \lambda \in \mathbb{F}$,均成立 $\lambda I_{n}-A B$ 可逆 $\Leftrightarrow \lambda I_{n}-B A$ 可逆.</p><p>(2)若 $\operatorname{rank}(A B)=\operatorname{rank}(B)$, 则 $\operatorname{rank}\left(A B^{2}\right)=\operatorname{rank}\left(B^{2}\right)$.</p><ol><li><p>设 $V$ 为 $\mathbb{C}$ 上的 $n$ 维线性空间, $\varphi$ 为 $V$ 上的线性变换,其全体不同特征值为 $\lambda_{1}, \lambda_{2}, \cdots, \lambda_{r}$. 求证: $\varphi$ 可 对角化 $\Leftrightarrow$ 存在 $1 \leqslant i \leqslant r$, 使得</p><script type="math/tex; mode=display">\operatorname{Im}\left(\varphi-\lambda_{i} \mathcal{E}\right)=\oplus_{j \neq i} \operatorname{ker}\left(\varphi-\lambda_{j} \mathcal{E}\right) .</script></li><li><p>设 $f \in C[0,1]$. 对任意 $[0,1]$ 上的可微函数 $g$ 均成立 $\int_{0}^{1} f(x) g(x) d x=0$. 求证: $f \equiv 0$.</p></li><li><p>求证Green第二公式.</p></li><li><p>与连续函数介值定理有关.</p></li><li><p>设区域 $D \subset \mathbb{C},\left\{f_{n}\right\} \subset H(\bar{D})$, 存在 $\bar{D}$ 上的复变函数 $f$,使得 $\left\{f_{n}\right\}$ 在 $D$ 上收敛于 $f,\left\{f_{n}\right\}$ 在 $\partial D$ 上一 致收敛于 $f$.求证:</p></li></ol><p>(1) $\left\{f_{n}\right\}$ 在 $D$ 中一致收敛于 $f \in H(D)$.</p><p>(2) 若 $\left\{f_{n}\right\}$ 是 $D$ 中的单叶函数列, $f$ 不是常值函数,则 $f$ 也是 $D$ 中的单叶函数.</p><h2 id="2021清华内推"><a href="#2021清华内推" class="headerlink" title="2021清华内推"></a>2021清华内推</h2><ol><li><p>(10\%) 已知复方阵 $A \in M_{n}(\mathbb{C})$ 的特征多项式为 $(\lambda-1)^{n}$. 证明 $A$ 与 $A^{2}$ 相似.</p></li><li><p>(10\%) 已知实对称方阵</p><script type="math/tex; mode=display">A=\left(\begin{array}{lll}2 & 0 & 1 \\0 & 2 & 1 \\1 & 1 & 1\end{array}\right)</script><p>向量 $x \in\left\{x \in R^{3} \mid x^{T} x=1\right\}$. 当 $x$ 取何值时, $x^{T} A x$ 取到最大值,最小值?</p></li><li><p>(10\%) 已知域 $\mathbb{F}$ 上的有限维线性空间 $X, Y, U, V$, 以及线性映射 $\alpha: X \rightarrow Y, \beta: V \rightarrow U, \psi: X \rightarrow U$,并且满足<br>$\operatorname{ker} \alpha \subseteq \operatorname{ker} \psi, \operatorname{Im} \psi \subseteq \operatorname{Im} \beta$<br>那么是否存在线性映射 $\phi: Y \rightarrow V$ 使得</p><script type="math/tex; mode=display">\psi=\beta \circ \phi \circ \alpha ?</script><p>若是请证明,否则举出一个反例.</p></li><li><p>(10\%) 已知域 $\mathbb{F}$ 上的方阵 $A, B \in M_{n}(\mathbb{F})$,满足: $A$ 是可逆矩阵, $B$ 是幂零矩阵(即存在正整数 $m$ 使得 $B^{m}=0$ ). 证明:对任意 $C \in M_{n}(\mathbb{F})$, 存在 $X \in M_{n}(\mathbb{F})$, 使得</p><script type="math/tex; mode=display">A X-X B=C \text {. }</script></li><li><p>(10\%)设 $E$ 为 $\mathbb{R}$ 的非空子集,并且 $E$ 上的任何连续函数都有界. 证明: $E$ 为有界闭集.</p></li><li><p>(10\%)已知 $f(x)$ 是定义在 $[0,1]$ 上的处处非负的黎曼可积函数, 并且</p><script type="math/tex; mode=display">\int_{0}^{1} f(x) d x=0 .</script><p>证明: $f(x)$ 几乎处处为 0 .</p></li><li><p>(20\%)计算 $\mathbb{R}^{3}$ 中的区域</p><script type="math/tex; mode=display">\left\{(x, y, z) \mid x^{2}+y^{2} \leqslant 1, y^{2}+z^{2} \leqslant 1, z^{2}+x^{2} \leqslant 1\right\}</script><p>的体积.</p></li><li><p>(20\%) 已知 $f(z)$ 在单位圆盘 $|z|&lt;1$ 解析,并且 $|f(z)| \leqslant \frac{1}{1-|z|}, \forall|z|&lt;1$. 证明:对任意整数 $n \geqslant 0$,</p><script type="math/tex; mode=display">\left|f^{(n)}(0)\right| \leqslant(n+1) ! e .</script></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;2021清华九推试题&lt;br&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="夏令营" scheme="http://example.com/categories/%E5%A4%8F%E4%BB%A4%E8%90%A5/"/>
-    
-    
-    <category term="清华" scheme="http://example.com/tags/%E6%B8%85%E5%8D%8E/"/>
     
   </entry>
   
