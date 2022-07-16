@@ -9,7 +9,7 @@
     
     <title>
         
-            拓扑空间 |
+            点集拓扑第一章：拓扑空间 |
         
         小周的数学世界
     </title>
@@ -166,7 +166,7 @@
     <div class="article-content-container">
 
         <div class="article-title">
-            <span class="title-hover-animation">拓扑空间</span>
+            <span class="title-hover-animation">点集拓扑第一章：拓扑空间</span>
         </div>
 
         
@@ -187,6 +187,28 @@
         <span class="mobile">2022-07-14 14:26</span>
     </span>
     
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%82%B9%E9%9B%86%E6%8B%93%E6%89%91/">点集拓扑</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
     
 
     
@@ -213,7 +235,9 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="拓扑空间"><a href="#拓扑空间" class="headerlink" title="拓扑空间"></a>拓扑空间</h1><h2 id="拓扑空间的定义"><a href="#拓扑空间的定义" class="headerlink" title="拓扑空间的定义"></a>拓扑空间的定义</h2><blockquote>
+            <p>拓扑空间</p>
+ <span id="more"></span>
+<h1 id="拓扑空间"><a href="#拓扑空间" class="headerlink" title="拓扑空间"></a>拓扑空间</h1><h2 id="拓扑空间的定义"><a href="#拓扑空间的定义" class="headerlink" title="拓扑空间的定义"></a>拓扑空间的定义</h2><blockquote>
 <p>定义：[拓扑空间]<br>设$X$是一个非空集合，$X$的一个子集族$\tau$被称为是$X$的一个拓扑，当它满足以下三条公理：</p>
 <ol>
 <li>$X$和$\emptyset$在$\tau$中；</li>
@@ -256,6 +280,7 @@ B(x,r)=\{y|d(x,y) < r\}</script><p>类似欧式空间一样，用这些球我们
 <blockquote>
 <p>引理<br>$(X, d)$ 的任意 两个球形邻域的交集是若 干球形邻域的并集，</p>
 </blockquote>
+<img src="/.com//07/14/%E6%8B%93%E6%89%91%E7%A9%BA%E9%97%B4/1.png" class>
 <p>这个定理的证明，我们可以说是相当熟悉了！设 $U=B\left(x_{1}, \varepsilon_{1}\right)$ $\cap B\left(x_{2}, \varepsilon_{2}\right), \quad \forall x \in U$, 则 $\varepsilon_{1}-d\left(x, x_{1}\right)&gt;0(i=1,2) .$ 记 $\varepsilon_{x}=\min \left\{\varepsilon_{1}-d\left(x, x_{1}\right)\right.$, $\left.\varepsilon_{2}-d\left(x, x_{2}\right)\right\}$ , 不难验证 $B\left(x, \varepsilon_{x}\right) \subset U$. 于是</p>
 <script type="math/tex; mode=display">
 U=\bigcup_{x \in U} B\left(x, \epsilon_{x}\right)</script><p>下边我们就开始证明两个$\tau_d$中的元素$U_1,U_2$在$\tau_d$中：</p>
@@ -410,10 +435,10 @@ x\in (\bar{A})^c&\iff x\text{有邻域不和A相交}\\
 <p>事实上，这四条性质可以完全描述闭包：</p>
 <blockquote>
 <p>闭包公理<br>设 $X$ 是一个集合. 映射 $c^{*}: \mathscr{P}(X) \rightarrow \mathscr{P}(X)$ 如 果满足条件：对于任何 $A, B \in \mathscr{P}(X)$,</p>
-<p>(1) $c^{*}(\varnothing)=\varnothing$;</p>
-<p>(2) $A \subset c^{*}(A)$;</p>
-<p>(3) $c^{<em>}(A \cup B)=c^{</em>}(A) \cup c^{*}(B) ;$</p>
-<p>(4) $c^{<em>}\left(c^{</em>}(A)\right)=c^{<em>}(A)$,<br>则称为集合 $X$ 的一个闭包运算. (以上四个条件通常称为 Kuratovski 闭包公理. )下边为了叙述方便，我们将$c^</em>$运算记为$A^<em>$,记$c^</em>(A)=A^*$.</p>
+<p>(1) $c^{\ast}(\varnothing)=\varnothing$;</p>
+<p>(2) $A \subset c^{\ast}(A)$;</p>
+<p>(3) $c^{\ast}(A \cup B)=c^{\ast}(A) \cup c^{\ast}(B) ;$</p>
+<p>(4) $c^{\ast}\left(c^{\ast}(A)\right)=c^{\ast}(A)$,<br>则称为集合 $X$ 的一个闭包运算. (以上四个条件通常称为 Kuratovski 闭包公理. )下边为了叙述方便，我们将$c^<em>$运算记为$A^</em>$,记$c^<em>(A)=A^</em>$.</p>
 </blockquote>
 <p>则存在 $X$ 的惟一一个拓扑 $\mathscr{T}$ 使得在拓扑空间 $(X, \mathscr{T})$ 中对于每一个 $A \subset X$ 有 $c^{*}(A)=\bar{A}$.</p>
 <hr>
@@ -498,6 +523,14 @@ B=U \cap A</script><p>又因为$A$也是开集，所以$B$是$X$中的开集.</p
 
         
 
+        
+            <ul class="post-tags-box">
+                
+                    <li class="tag-item">
+                        <a href="/tags/%E7%82%B9%E9%9B%86%E6%8B%93%E6%89%91/">#点集拓扑</a>&nbsp;
+                    </li>
+                
+            </ul>
         
 
         
